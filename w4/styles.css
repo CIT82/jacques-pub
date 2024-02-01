@@ -32,6 +32,26 @@ main {
     background-color: aliceblue;
 }
 
+main ul {
+    width: 7rem;
+}
+
+main ol {
+    width: 10rem;
+}
+
+main ul,
+main ol,
+form {
+    margin: 0 auto;
+}
+
+form > button {
+    display: block;
+    width: 100%;
+    padding-block: .5rem;
+}
+
 footer {
     background-color: rgb(205, 236, 255);
     padding: 10px 0;
@@ -39,6 +59,12 @@ footer {
 
 label {
     display: block;
+}
+form {
+    background-color: #fff;
+    width: 25rem;
+    text-align: left;
+    padding: 3rem;
 }
 
 .outline {
