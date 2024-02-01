@@ -1,70 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jacque S.">
-    <title>Week 4 - Implement Three HTML Elements</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="icon" type="image/x-icon" href="../images/strawberry-logo.png">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body class="outline">
     <header>
-        <h1>Three <abbr title="HyperText Markup Language">HTML</abbr> Elements</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://github.com/CIT82" target="_blank">CIT 82 Github</a>
+          </li>
+          <li>
+            <a href="https://github.com/CIT82/jacques-pub" target="_blank">jacques-pub</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Welcome to my Website</h1>
     </header>
-    <main class="wrapper">
-        <section>
-            <h2>Elements I Chose</h2>
-            <dl>
-                <dt><em>&lt;dl&gt;</em></dt>
-                <dd>&nbsp;&nbsp;&nbsp;description list</dd><br>
-                <dt><em>&lt;em&gt;</em></dt>
-                <dd>&nbsp;&nbsp;&nbsp;adding emphasis</dd><br>
-                <dt><em>&lt;abbr&gt;</em></dt>
-                <dd>&nbsp;&nbsp;&nbsp;abbreviation or acronym</dd><br>
-            </dl>
-        </section>
-        <article>
-            <header>
-                <h2>Block Examples</h2>
-            </header>
-            <section>
-                <h3>Description List</h3>
-                <code>
-                    <span>
-                        &lt;dl&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&lt;dt&gt;item&lt;/dt&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&lt;dd&gt;description&lt;/dd&gt;<br>
-                        &lt;/dl&gt;
-                    </span>
-                </code>
-                <p>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" target="_blank">Learn more about &lt;dl&gt; from MDN</a>
-                </p>
-            </section>
-            <section>
-                <h3>Emphasis</h3>
-                <code>
-                    &lt;p&gt;<br>
-                    &nbsp;&nbsp;&nbsp;Having breaks throughout your work day is one of many <span>&lt;em&gt;important&lt;/em&gt;</span> steps that can improve work productivity. <br>
-                    &lt;/p&gt;
-                </code>
-                <p>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">Learn more about &lt;em&gt; from MDN</a>
-                </p>
-            </section>
-            <section>
-                <h3>Abbreviation</h3>
-                <code>
-                    &lt;p&gt;<br>
-                    &nbsp;&nbsp;&nbsp;You can create great layouts using <span>&lt;abbr title="Cascading Style Sheets"&gt;CSS&lt;/abbr&gt;</span>!<br>
-                    &lt;/p&gt;
-                </code>
-                <p>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_blank">Learn more about &lt;abbr&gt; from MDN</a>
-                </p>
-            </section>
-        </article>
-        
+    <main>
+      <p>This webpage demonstrates my first effort in creating websites.</p>
+      <section>
+        <h2>My Fav Fruits</h2>
+        <ul>
+          <li>Strawberries</li>
+          <li>Strawberries</li>
+          <li>Strawberries</li>
+        </ul>
+        <img src="../images/strawberries-bg.svg" alt="Three pink-red strawberries grouped together.">
+      </section>
+      <section>
+        <h2>Steps to Make a Sandwich</h2>
+        <ol>
+          <li>Get bread slices</li>
+          <li>Add fav fillings</li>
+          <li>Put the slices together</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Contact Us</h2>
+        <form action="">
+          <label for="inputName">Name</label>
+          <input type="text" id="inputName" />
+          <label for="inputEmail">Email</label>
+          <input type="email" id="inputEmail" />
+          <label for="inputMessage">Message</label>
+          <textarea
+            name="message"
+            id="inpuptMessage"
+            cols="30"
+            rows="10"
+          ></textarea
+          ><br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
-</body>
+    <footer>
+      <p>Copyright &copy; Jacque S.</p>
+    </footer>
+  </body>
 </html>
