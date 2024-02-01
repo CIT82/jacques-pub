@@ -16,9 +16,12 @@ header li {
     display: inline-block;
     margin: -1;
 }
-header li:first-child::after {
+header li::after {
     content: '|';
     font-weight: bold;
+}
+header li:last-child::after {
+    content: '';
 }
 header li > a {
     color: unset;
@@ -40,4 +43,9 @@ label {
 
 .outline {
     border: 1px solid #000;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
 }
