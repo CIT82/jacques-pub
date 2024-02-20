@@ -44,3 +44,45 @@ h1, h2, h3, h4, h5, h6 {
   background-position: top center;
   position: relative;
 }
+:root {
+  --c-dark: #343A40;
+  --c-accent: #FFD966;
+  --c-light: #f5f5f5;
+  --c-primary: #004E89;
+  --c-secondary: #e1e1e1;
+  --c-link: #BEE7E8;
+}
+body {
+  background-color: var(--c-primary);
+  color: var(--c-light);
+}
+
+.hashtag {
+  color: var(--c-accent);
+}
+a {
+  color: var(--c-link);
+}
+
+section > h2,
+article > h2 {
+  color: var(--c-accent) !important;
+}
+
+#bg-break-1 {
+  background-image: url('assets/img/moon-bg.jpg');
+  background-position: center center;
+}
+.bg-break {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.parallax {
+  background-attachment: fixed;
+  font-size: 155px;
+  
+}
+span.text-body-secondary, h1 {
+  color: var(--c-secondary) !important;
+}
