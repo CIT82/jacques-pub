@@ -74,7 +74,7 @@ article > h2 {
   background-position: center center;
 }
 .bg-break {
-  height: 400px;
+  height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -83,6 +83,8 @@ article > h2 {
   font-size: 155px;
   
 }
-span.text-body-secondary, h1 {
+span.text-body-secondary, 
+h1,
+.blog-post-meta {
   color: var(--c-secondary) !important;
 }
