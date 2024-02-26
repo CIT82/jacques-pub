@@ -181,4 +181,11 @@ footer {
   .border_end-footer {
     border: none;
   }
+  #site-map .wrapper  {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #site-map {
+    background-position: center bottom;
+  }
 }
