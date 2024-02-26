@@ -1,7 +1,17 @@
+:root {
+  --c-dark: #343a40;
+  --c-accent: #ffd966;
+  --c-light: #f5f5f5;
+  --c-primary: #004e89;
+  --c-secondary: #e1e1e1;
+  --c-link: #bee7e8;
+}
+/* BOOTSTRAP */
 /* stylelint-disable stylistic/selector-list-comma-newline-after */
 
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: "Playfair Display", Georgia, "Times New Roman",
+    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
   font-size: 2.25rem;
 }
 
@@ -9,17 +19,27 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman",
+    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
 }
 
 .flex-auto {
   flex: 0 0 auto;
 }
 
-.h-250 { height: 250px; }
+.h-250 {
+  height: 250px;
+}
 @media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
+  .h-md-250 {
+    height: 250px;
+  }
 }
 
 /* Pagination */
@@ -38,25 +58,72 @@ h1, h2, h3, h4, h5, h6 {
   color: #727272;
 }
 
-#jumbotron-bg {
-  background-image: url('assets/img/jumbotron-bg.jpg');
-  background-size: cover;
-  background-position: top center;
-  position: relative;
-}
-:root {
-  --c-dark: #343A40;
-  --c-accent: #FFD966;
-  --c-light: #f5f5f5;
-  --c-primary: #004E89;
-  --c-secondary: #e1e1e1;
-  --c-link: #BEE7E8;
-}
+/* END OF BOOTSTRAP */
 body {
   background-color: var(--c-primary);
   color: var(--c-light);
 }
 
+.jumbotron-bg {
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  height: 620px;
+  margin-bottom: 6rem;
+}
+.jumbotron-bg h1 {
+  margin-top: 7.5rem;
+  border-radius: 44px;
+  text-shadow: 2px 2px 0px rgba(0, 78, 137, 1), 2px -2px 0px rgba(0, 78, 137, 1),
+    -2px 2px 0px rgba(0, 78, 137, 1), -2px -2px 0px rgba(0, 78, 137, 1),
+    2px 0px 0px rgba(64, 116, 181, 1), 0px 2px 0px rgba(64, 116, 181, 1),
+    -2px 0px 0px rgba(64, 116, 181, 1), 0px -2px 0px rgba(0, 78, 137, 1);
+}
+#jumbotron-bg-home {
+  background-image: url("assets/img/jumbotron-bg.jpg");
+}
+#jumbotron-bg-support-us {
+  background-image: url("assets/img/support-us-bg.jpg");
+}
+#jumbotron-bg-contact {
+  background-image: url('assets/img/astronaut.jpg');
+  background-position: center 70%;
+}
+#jumbotron-bg-affiliates {
+  background-image: url('assets/img/satellite-img.jpg');
+  background-position: center 60%;
+}
+#jumbotron-bg-posts {
+  background-image: url('assets/img/stars-sky.jpg');
+  background-position: top center;
+}
+#jumbotron-bg-events {
+  background-image: url('assets/img/nebula.jpg');
+}
+#jumbotron-bg-post-one {
+  background-image: url('assets/img/satellite-2.jpg');
+  background-position: center 70%;
+}
+#jumbotron-bg-post-two {
+  background-image: url('assets/img/galaxy.jpg');
+}
+#jumbotron-bg-event-details-one {
+  background-image: url('assets/img/event-details.jpg');
+  background-position: center 85%;
+}
+#site-map {
+  background-image: url('assets/img/site-map-img.jpg');
+  background-position: 322px 30%;
+}
+#site-map .wrapper {
+  background-color: rgba(0, 78, 137, .75);
+  width: 40rem;
+  margin: 0 12rem;
+}
+
+#event-details ul {
+  list-style-type: '🚀';
+}
 .hashtag {
   color: var(--c-accent);
 }
@@ -64,13 +131,22 @@ a {
   color: var(--c-link);
 }
 
+a.btn {
+  margin-top: .5rem;
+  background-color: var(--c-secondary);
+  color: var(--c-primary);
+}
 section > h2,
-article > h2 {
+article > h2,
+article > header > h2 {
   color: var(--c-accent) !important;
 }
+.nav-scroller {
+  background-color: rgba(0,0,0,.4);
 
+}
 #bg-break-1 {
-  background-image: url('assets/img/moon-bg.jpg');
+  background-image: url("assets/img/moon-bg.jpg");
   background-position: center center;
 }
 .bg-break {
@@ -81,10 +157,28 @@ article > h2 {
 .parallax {
   background-attachment: fixed;
   font-size: 155px;
-  
 }
-span.text-body-secondary, 
+span.text-body-secondary,
 h1,
 .blog-post-meta {
   color: var(--c-secondary) !important;
+}
+
+.border_start-footer {
+  border-left: 1px solid var(--c-light);
+}
+.border_end-footer {
+  border-right: 1px solid var(--c-light);
+}
+footer {
+  background-color: var(--c-dark);
+  color: var(--secondary);
+}
+
+
+@media (max-width: 768px) {
+  .border_start-footer,
+  .border_end-footer {
+    border: none;
+  }
 }
