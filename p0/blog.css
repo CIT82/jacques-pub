@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap');
+
 :root {
   --c-dark: #343a40;
   --c-accent: #ffd966;
@@ -62,6 +64,7 @@ h6 {
 body {
   background-color: var(--c-primary);
   color: var(--c-light);
+  font-family: "Roboto Slab", serif;
 }
 
 .jumbotron-bg {
@@ -78,6 +81,22 @@ body {
     -2px 2px 0px rgba(0, 78, 137, 1), -2px -2px 0px rgba(0, 78, 137, 1),
     2px 0px 0px rgba(64, 116, 181, 1), 0px 2px 0px rgba(64, 116, 181, 1),
     -2px 0px 0px rgba(64, 116, 181, 1), 0px -2px 0px rgba(0, 78, 137, 1);
+}
+
+.jumbotron-bg h1,
+h1,
+h2,
+h3,
+h4,
+nav a,
+.blog-header-logo {
+  font-family: "Orbitron", sans-serif;
+}
+h1, h2, .blog-header-logo {
+  font-weight: 800 !important;
+}
+nav a {
+  font-weight: 500;
 }
 #jumbotron-bg-home {
   background-image: url("assets/img/jumbotron-bg.jpg");
@@ -126,6 +145,7 @@ body {
 }
 .hashtag {
   color: var(--c-accent);
+  font-weight: 600;
 }
 a {
   color: var(--c-link);
@@ -140,6 +160,7 @@ section > h2,
 article > h2,
 article > header > h2 {
   color: var(--c-accent) !important;
+  font-family: "Orbitron", sans-serif;
 }
 .nav-scroller {
   background-color: rgba(0,0,0,.4);
