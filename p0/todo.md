@@ -2,7 +2,7 @@
 - [x] Change color theme
 - [x] Remove most items from my navigation list (under ~~4~~ 5)
 - [x] Remove Sign Up and Search buttons (if I have time, maybe I'll keep search in for search functionality)
-- [ ] Possibly change font
+- [x] Possibly change font
 - [x] Adjust footer to have more links
 - [x] Add a background image to jumbotron section
 - [x] Change title to page
