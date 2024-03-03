@@ -119,6 +119,7 @@
       href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap"
       rel="stylesheet"
     />
+    <script src="assets/js/contact.js" defer></script>
     <!-- Custom styles for this template -->
     <link href="blog.css" rel="stylesheet" />
   </head>
@@ -178,10 +179,13 @@
                 for more direct communication. Let's make the universe a little
                 smaller, together.
               </p>
-              <form action="">
+              <form action="" id="contactForm">
                 <div class="mb-3">
                   <label for="nameInput" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="nameInput" />
+                  <input type="text" class="form-control" 
+                  name="fullName"
+                  required
+                  id="nameInput" />
                 </div>
                 <div class="mb-3">
                   <label for="emailInput" class="form-label"
@@ -191,18 +195,24 @@
                     type="email"
                     class="form-control"
                     id="emailInput"
+                    name="email"
                     placeholder="name@example.com"
+                    required
                   />
                 </div>
                 <div class="mb-3">
                   <label for="subjectInput" class="form-label">Subject</label>
-                  <input type="text" class="form-control" id="subjectInput" />
+                  <input type="text" class="form-control" 
+                  name="subject"
+                  id="subjectInput" />
                 </div>
                 <div class="mb-3">
                   <label for="messageInput" class="form-label">Message</label>
                   <textarea
                     class="form-control"
                     id="messageInput"
+                    name="message"
+                    required
                     rows="3"
                   ></textarea>
                 </div>
@@ -210,6 +220,7 @@
                   <button type="submit" class="btn btn-light">Send</button>
                 </div>
               </form>
+              <p id="sent" class="mt-4 display-4 text-center"></p>
             </section>
             <section>
               <h2 class="display-5 mb-3">Alternate Contact Methods</h2>
